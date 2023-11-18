@@ -23,7 +23,7 @@
           <ion-avatar aria-hidden="true" slot="start">
             <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
           </ion-avatar>
-          <ion-label>USERNAME</ion-label>
+          <ion-label>{{username}}</ion-label>
         </ion-item>
         <!-- <ion-item>
           <ion-label>User Information</ion-label>
@@ -48,10 +48,10 @@
           <ion-label><strong><h1>User Information</h1></strong></ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Height</ion-label>
+          <ion-label>{{height}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Weight</ion-label>
+          <ion-label>{{weight}}</ion-label>
         </ion-item>
         <ion-item>
           <ion-label>BMI</ion-label>
@@ -78,8 +78,15 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
+<script>
+import tab2 from './Tab2Page.js'
 import { IonButton, IonAvatar, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonLabel, IonList, IonCard, IonCardContent } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+
+export default {
+  ...tab2,
+}
+
+
 </script>
