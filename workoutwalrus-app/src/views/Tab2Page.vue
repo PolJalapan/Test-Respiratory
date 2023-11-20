@@ -84,9 +84,9 @@ import { IonButton, IonAvatar, IonPage, IonHeader, IonToolbar, IonTitle, IonCont
 import { defineComponent } from 'vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
-export default {
-  ...tab2,
-}
-
+export default defineComponent({
+  components: { IonPage, IonContent },
+  ...tab2
+});
 
 </script>

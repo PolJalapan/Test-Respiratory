@@ -33,7 +33,12 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
+<script>
 import { IonButton, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSelect, IonSelectOption, IonList, IonItem } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  components: { IonPage, IonContent }
+});
 </script>
